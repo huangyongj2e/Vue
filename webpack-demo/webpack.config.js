@@ -7,17 +7,16 @@ const config = {
     vendors: './src/vendors.js'
   }
 };
-
-¡°¿ÉÀ©Õ¹µÄ webpack ÅäÖÃ¡±ÊÇÖ¸£¬¿ÉÖØÓÃ²¢ÇÒ¿ÉÒÔÓëÆäËûÅäÖÃ×éºÏÊ¹ÓÃ¡£ÕâÊÇÒ»ÖÖÁ÷ĞĞµÄ¼¼Êõ£¬ÓÃÓÚ½«¹Ø×¢µã(concern)´Ó»·¾³(environment)¡¢¹¹½¨Ä¿±ê(build target)¡¢ÔËĞĞÊ±(runtime)ÖĞ·ÖÀë¡£È»ºóÊ¹ÓÃ×¨ÃÅµÄ¹¤¾ß£¨Èç webpack-merge£©½«ËüÃÇºÏ²¢¡£
+â€œå¯æ‰©å±•çš„ webpack é…ç½®â€æ˜¯æŒ‡ï¼Œå¯é‡ç”¨å¹¶ä¸”å¯ä»¥ä¸å…¶ä»–é…ç½®ç»„åˆä½¿ç”¨ã€‚è¿™æ˜¯ä¸€ç§æµè¡Œçš„æŠ€æœ¯ï¼Œç”¨äºå°†å…³æ³¨ç‚¹(concern)ä»ç¯å¢ƒ(environment)ã€æ„å»ºç›®æ ‡(build target)ã€è¿è¡Œæ—¶(runtime)ä¸­åˆ†ç¦»ã€‚ç„¶åä½¿ç”¨ä¸“é—¨çš„å·¥å…·ï¼ˆå¦‚ webpack-mergeï¼‰å°†å®ƒä»¬åˆå¹¶ã€‚
 */
-// ¿ÉÒÔ¶à¸öÈë¿Ú£¬µ«Ò»¶¨Ö»ÓĞÒ»¸ö³ö¿Ú£¬output Ñ¡Ïî¿ÉÒÔ¿ØÖÆ webpack ÈçºÎÏòÓ²ÅÌĞ´Èë±àÒëÎÄ¼ş
+// å¯ä»¥å¤šä¸ªå…¥å£ï¼Œä½†ä¸€å®šåªæœ‰ä¸€ä¸ªå‡ºå£ï¼Œoutput é€‰é¡¹å¯ä»¥æ§åˆ¶ webpack å¦‚ä½•å‘ç¡¬ç›˜å†™å…¥ç¼–è¯‘æ–‡ä»¶
 module.exports = {
-  entry: './src/index.js',  //µ¥¸öÎÄ¼şÈë¿Ú£¬¼òĞ´Ç°µÈ¼ÛÓÚ entry:{main:'./src/index.js'}
-  output: {
-    filename: 'bundle.js',  //filenameÓÃÓÚÊä³öÎÄ¼şµÄÎÄ¼şÃû¡£
-    path: path.resolve(__dirname, 'dist') // Ä¿±êÊä³öÄ¿Â¼ path µÄ¾ø¶ÔÂ·¾¶¡£
-  },
-  module:{
-	  rules:
-  }
+    entry: './src/index.js',  //å•ä¸ªæ–‡ä»¶å…¥å£ï¼Œç®€å†™å‰ç­‰ä»·äº entry:{main:'./src/index.js'}
+    output: {
+        filename: 'bundle.js',  //filenameç”¨äºè¾“å‡ºæ–‡ä»¶çš„æ–‡ä»¶åã€‚
+        path: path.resolve(__dirname, 'dist') // ç›®æ ‡è¾“å‡ºç›®å½• path çš„ç»å¯¹è·¯å¾„ã€‚
+    },
+    module:{
+        rules:1
+    }
 };
