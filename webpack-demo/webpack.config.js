@@ -17,6 +17,6 @@ module.exports = {
         path: path.resolve(__dirname, 'dist') // 目标输出目录 path 的绝对路径。
     },
     module:{
-        rules:1
+        rules:1s
     }
 };
